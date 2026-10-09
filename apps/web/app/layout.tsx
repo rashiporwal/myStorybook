@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { AmbientBackground } from "./components/ambient-background";
 import { SiteFooter } from "./components/site-footer";
 import { SiteHeader } from "./components/site-header";
 import { ThemeToggle } from "./components/theme-toggle";
@@ -36,6 +37,7 @@ export default function RootLayout({
       <head><script dangerouslySetInnerHTML={{ __html: themeScript }} /></head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <a className="skip-link" href="#main-content">Skip to content</a>
+        <AmbientBackground />
         <SiteHeader />
         <ThemeToggle />
         <div id="main-content">{children}</div>
