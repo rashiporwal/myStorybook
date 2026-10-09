@@ -3,12 +3,13 @@ import Link from "next/link";
 import { ArrowIcon } from "./components/icons";
 import { Reveal } from "./components/reveal";
 import { galleryItems, stories } from "./data";
+import { siteAsset } from "./lib/site-asset";
 
 export default function Home() {
   return (
     <main>
       <section className="hero">
-        <Image src="/images/reading-room.webp" alt="A Japanese reading room overlooking a misty garden" fill priority fetchPriority="high" sizes="100vw" className="hero-image" />
+        <Image src={siteAsset("/images/reading-room.webp")} alt="A Japanese reading room overlooking a misty garden" fill priority fetchPriority="high" sizes="100vw" className="hero-image" />
         <div className="hero-wash" />
         <div className="hero-copy wrap">
           <p className="eyebrow"><span>読む</span> A place for stories</p>

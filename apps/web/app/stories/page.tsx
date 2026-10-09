@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowIcon } from "../components/icons";
 import { Reveal } from "../components/reveal";
 import { stories } from "../data";
+import { siteAsset } from "../lib/site-asset";
 
 export const metadata = { title: "Stories — My Storybook", description: "Essays, folklore and travel notes made for slow reading." };
 
@@ -16,7 +17,7 @@ export default function StoriesPage() {
         <Reveal delay={160}><article><span>間</span><div><small>Pause</small><h2>Attention & stillness</h2><p>Essays about making time, noticing more, and living between one thing and the next.</p></div></article></Reveal>
       </section>
       <section className="featured-story wrap" id="featured-story">
-        <Reveal className="featured-image"><Image src="/images/kyoto-rain.webp" alt="Rain falling on a lantern-lit Kyoto lane" fill priority sizes="(max-width: 800px) 100vw, 55vw" /></Reveal>
+        <Reveal className="featured-image"><Image src={siteAsset("/images/kyoto-rain.webp")} alt="Rain falling on a lantern-lit Kyoto lane" fill priority sizes="(max-width: 800px) 100vw, 55vw" /></Reveal>
         <Reveal className="featured-copy glass" delay={100}><span className="story-number">Featured · 物語 01</span><h2>The Last Lantern</h2><p>At the edge of a rain-soaked village, an old lantern keeper waits for a promise made beneath the first plum blossom.</p><blockquote>“Some lights are kept not to show the way forward, but to remember the way home.”</blockquote><div className="story-meta"><span>Folklore</span><span>6 min read</span></div></Reveal>
       </section>
       <section className="archive-section wrap">

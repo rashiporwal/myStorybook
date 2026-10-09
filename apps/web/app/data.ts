@@ -1,3 +1,5 @@
+import { siteAsset } from "./lib/site-asset";
+
 export const stories = [
   {
     slug: "the-last-lantern",
@@ -7,7 +9,7 @@ export const stories = [
     excerpt:
       "At the edge of a rain-soaked village, an old lantern keeper waits for a promise made beneath the first plum blossom.",
     readTime: "6 min read",
-    image: "/images/kyoto-rain.webp",
+    image: siteAsset("/images/kyoto-rain.webp"),
   },
   {
     slug: "ink-remembers",
@@ -17,7 +19,7 @@ export const stories = [
     excerpt:
       "A quiet meditation on handwriting, inherited notebooks, and the small histories we leave in the margins.",
     readTime: "4 min read",
-    image: "/images/ink-book.webp",
+    image: siteAsset("/images/ink-book.webp"),
   },
   {
     slug: "beyond-the-mist",
@@ -27,7 +29,7 @@ export const stories = [
     excerpt:
       "Morning arrives slowly on the coast, where red gates seem to float between the remembered world and the sea.",
     readTime: "8 min read",
-    image: "/images/torii-mist.webp",
+    image: siteAsset("/images/torii-mist.webp"),
   },
   {
     slug: "tea-before-words",
@@ -37,7 +39,7 @@ export const stories = [
     excerpt:
       "On the small ceremonies that prepare a room for honesty: warm cups, open windows, and a few unhurried silences.",
     readTime: "5 min read",
-    image: "/images/reading-room.webp",
+    image: siteAsset("/images/reading-room.webp"),
   },
   {
     slug: "a-map-of-rain",
@@ -47,7 +49,7 @@ export const stories = [
     excerpt:
       "Following the silver reflections of an unfamiliar city, with no destination except the next pool of lantern light.",
     readTime: "7 min read",
-    image: "/images/kyoto-rain.webp",
+    image: siteAsset("/images/kyoto-rain.webp"),
   },
   {
     slug: "the-space-after",
@@ -57,34 +59,34 @@ export const stories = [
     excerpt:
       "Why the pause after a sentence, the blank edge of a page, and an unfinished goodbye can hold so much meaning.",
     readTime: "4 min read",
-    image: "/images/ink-book.webp",
+    image: siteAsset("/images/ink-book.webp"),
   },
 ];
 
 export const galleryItems = [
   {
-    src: "/images/reading-room.webp",
+    src: siteAsset("/images/reading-room.webp"),
     alt: "A quiet Japanese reading room overlooking a misty garden",
     title: "Stories at Blue Hour",
     place: "Kyoto · 京都",
     category: "Quiet",
   },
   {
-    src: "/images/kyoto-rain.webp",
+    src: siteAsset("/images/kyoto-rain.webp"),
     alt: "A lantern-lit Kyoto lane after rain",
     title: "After the Rain",
     place: "Gion · 祇園",
     category: "Night",
   },
   {
-    src: "/images/ink-book.webp",
+    src: siteAsset("/images/ink-book.webp"),
     alt: "A hand-bound book, ink brush and autumn leaves on tatami",
     title: "The Written Season",
     place: "Nara · 奈良",
     category: "Still life",
   },
   {
-    src: "/images/torii-mist.webp",
+    src: siteAsset("/images/torii-mist.webp"),
     alt: "Torii gates appearing through coastal morning mist",
     title: "Threshold of Morning",
     place: "Miyajima · 宮島",
