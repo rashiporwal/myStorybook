@@ -14,6 +14,11 @@ export default function Home() {
           <p className="eyebrow"><span>読む</span> A place for stories</p>
           <h1>Every life holds<br />a <em>quiet story.</em></h1>
           <p className="hero-lede">A digital collection of fleeting places, handwritten thoughts, and the moments that stay after everything else has gone.</p>
+          <div className="hero-details" aria-label="Current journal issue">
+            <span><small>Current issue</small>Autumn · 2026</span>
+            <span><small>From the archive</small>06 quiet stories</span>
+            <span><small>Best enjoyed</small>Slowly · with tea</span>
+          </div>
           <div className="hero-actions">
             <Link href="/stories" className="button primary-button">Read the stories <ArrowIcon /></Link>
             <Link href="/gallery" className="text-link">Enter the gallery <span>↗</span></Link>
@@ -28,6 +33,11 @@ export default function Home() {
         <Reveal className="intro-copy" delay={100}>
           <p className="large-serif">We collect the details that are easy to miss—steam rising from a cup, an old road after rain, a sentence underlined twice.</p>
           <p>My Storybook is an independent digital journal inspired by the Japanese idea of <em>mono no aware</em>: a gentle awareness that every beautiful thing is passing.</p>
+          <div className="journal-facts">
+            <span><strong>01</strong><small>One considered edition each season</small></span>
+            <span><strong>12</strong><small>Places recorded without hurry</small></span>
+            <span><strong>∞</strong><small>Room left for your own memory</small></span>
+          </div>
           <Link href="/documentation" className="line-link">Our philosophy <ArrowIcon /></Link>
         </Reveal>
         <div className="sun-stamp" aria-hidden="true"><span>物語</span></div>
@@ -54,6 +64,14 @@ export default function Home() {
             </Reveal>
           ))}
         </div>
+        <Reveal className="reading-moods wrap">
+          <p><span>読</span> Choose a reading mood</p>
+          <div>
+            <Link href="/stories#the-last-lantern"><strong>For rainy evenings</strong><small>Folklore and warm windows</small></Link>
+            <Link href="/stories#ink-remembers"><strong>For a quiet morning</strong><small>Essays on memory and craft</small></Link>
+            <Link href="/stories#beyond-the-mist"><strong>For the road</strong><small>Field notes from elsewhere</small></Link>
+          </div>
+        </Reveal>
       </section>
 
       <section className="section ritual-section wrap">
@@ -61,6 +79,7 @@ export default function Home() {
         <Reveal className="ritual-copy" delay={100}>
           <p className="eyebrow"><span>書くこと</span> The ritual of writing</p><h2>Made with attention,<br />not <em>urgency.</em></h2>
           <p>Every story begins offline: in a notebook, on a walk, or in a long conversation. We edit with care and publish only when the words feel ready.</p>
+          <blockquote className="ritual-quote">“A page should feel like a room you can enter, not a corridor you are pushed through.”</blockquote>
           <ol className="process-list">
             <li><span>一</span><div><strong>Notice</strong><small>Look closely at the ordinary.</small></div></li>
             <li><span>二</span><div><strong>Listen</strong><small>Let every place speak in its own voice.</small></div></li>
@@ -82,12 +101,26 @@ export default function Home() {
             </Reveal>
           ))}
         </div>
+        <Reveal className="gallery-footnotes wrap">
+          <div><span>01</span><p>Natural light, imperfect weather, and the texture of a real place.</p></div>
+          <div><span>02</span><p>No staged crowds. We wait until a frame becomes quiet enough to listen.</p></div>
+          <div><span>03</span><p>Every photograph begins as a note: where, when, and what the air felt like.</p></div>
+        </Reveal>
+      </section>
+
+      <section className="seasonal-section section wrap">
+        <Reveal className="seasonal-heading"><p className="eyebrow"><span>季節</span> Notes from this season</p><h2>Three small things<br />we are <em>noticing.</em></h2></Reveal>
+        <div className="seasonal-notes">
+          <Reveal delay={60}><article><span className="note-mark">風</span><small>01 · Sound</small><h3>Wind in the noren</h3><p>The soft clap of a shop curtain has become our favorite way to hear that a street is awake.</p></article></Reveal>
+          <Reveal delay={120}><article><span className="note-mark">色</span><small>02 · Colour</small><h3>Persimmon at dusk</h3><p>A deep orange that appears for only a few minutes, somewhere between the last shop light and night.</p></article></Reveal>
+          <Reveal delay={180}><article><span className="note-mark">香</span><small>03 · Scent</small><h3>Cedar after rain</h3><p>The smell that turns an ordinary path into an old memory—even when you have never walked it before.</p></article></Reveal>
+        </div>
       </section>
 
       <section className="newsletter-section">
         <Reveal className="newsletter-card glass wrap">
           <span className="newsletter-kanji">便り</span>
-          <div><p className="eyebrow">A LETTER, OCCASIONALLY</p><h2>One story for your <em>quiet Sunday.</em></h2><p>No noise. No weekly pressure. Just a thoughtful note when there is something worth sharing.</p></div>
+          <div><p className="eyebrow">A LETTER, OCCASIONALLY</p><h2>One story for your <em>quiet Sunday.</em></h2><p>No noise. No weekly pressure. Just a thoughtful note when there is something worth sharing.</p><div className="letter-promises"><span>One essay</span><span>One photograph</span><span>One thing to notice</span></div></div>
           <form className="subscribe-form" action="mailto:hello@mystorybook.jp" method="get">
             <label className="sr-only" htmlFor="home-email">Your email address</label><input id="home-email" name="body" type="email" placeholder="your@email.com" required /><button type="submit" aria-label="Subscribe by email"><ArrowIcon /></button>
           </form>

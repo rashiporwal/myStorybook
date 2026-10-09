@@ -17,6 +17,15 @@ export default function ContactPage() {
         </Reveal>
         <Reveal delay={100}><ContactForm /></Reveal>
       </section>
+      <section className="contact-prompts wrap">
+        <Reveal><div className="prompt-heading"><p className="eyebrow"><span>質問</span> Before you write</p><h2>What can you send?</h2></div></Reveal>
+        <div className="prompt-grid">
+          <Reveal delay={60}><article><span>01</span><h3>A remembered place</h3><p>A street, kitchen, railway platform, or room that still appears clearly when you close your eyes.</p></article></Reveal>
+          <Reveal delay={110}><article><span>02</span><h3>A family ritual</h3><p>A repeated gesture, seasonal meal, saying, or small tradition you would like to keep from disappearing.</p></article></Reveal>
+          <Reveal delay={160}><article><span>03</span><h3>A creative proposal</h3><p>Editorial collaborations, thoughtful photography projects, licensing requests, and slow ideas are welcome.</p></article></Reveal>
+        </div>
+        <Reveal><p className="contact-boundary">Please do not send confidential or time-sensitive information. We are a small journal and usually reply within three days.</p></Reveal>
+      </section>
     </main>
   );
 }
