@@ -27,7 +27,7 @@ export function SiteFooter() {
       </div>
       <div className="footer-bottom wrap">
         <span>© 2026 My Storybook</span>
-        <span>Made slowly, read gently.</span>
+        <span className="footer-credit">Designed by <strong>Rashi Porwal</strong></span>
       </div>
     </footer>
   );
